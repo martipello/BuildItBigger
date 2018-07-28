@@ -56,6 +56,11 @@ android {
         maven { url "https://jitpack.io" }
         maven { url 'https://maven.google.com' }
     }
+    sourceSets {
+        paid {
+            manifest.srcFile 'src/paid/AndroidManifest.xml'
+        }
+    }
 }
 
 dependencies {
@@ -69,7 +74,7 @@ dependencies {
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testImplementation 'junit:junit:4.12'

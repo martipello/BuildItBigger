@@ -13,23 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.Toast;
-
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.extensions.android.json.AndroidJsonFactory;
-import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
-import com.sealstudios.javalib.myClass;
-import com.sealstudios.myjokelibrary.DisplayJoke;
-import com.udacity.gradle.builditbigger.Utils.Constants;
-import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
-
 
 /**
  * A placeholder fragment containing a simple view.
@@ -37,8 +20,6 @@ import java.util.Random;
 public class MainActivityFragment extends Fragment {
 
     Button jokeButton;
-    myClass myClass;
-    String[] Jokes;
 
 
     public MainActivityFragment() {
@@ -48,17 +29,22 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
-
-        myClass = new myClass();
         jokeButton = root.findViewById(R.id.jokeButton);
         jokeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ProgressBar progressBar = (ProgressBar) getActivity().findViewById(R.id.progress);
-                new EndPointsAsync(getActivity(),progressBar).execute();
+                String joke = new EndPointsAsync(getActivity().getApplicationContext(),progressBar).execute().get();
+                startJokeActivity(joke);
             }
         });
         return root;
     }
-
+    private void startJokeActivity(String joke) {
+        Intent i = new Intent(getActivity(), DisplayJoke.class);
+        Bundle b = new Bundle();
+        b.putString(Constants.JOKE_INTENT,joke);
+        i.putExtras(b);
+        getActivity().getApplication().startActivity(i);
+    }
 }

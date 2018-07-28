@@ -61,18 +61,11 @@ class EndPointsAsync extends AsyncTask<Context, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        mResult = result;
+        //mResult = result;
+        if (mProgressBar != null)
         mProgressBar.setVisibility(View.GONE);
-        startJokeActivity(mResult);
     }
 
-    private void startJokeActivity(String joke) {
-        Toast.makeText(mContext,joke,Toast.LENGTH_SHORT).show();
-        Intent i = new Intent(mContext, DisplayJoke.class);
-        Bundle b = new Bundle();
-        b.putString(Constants.JOKE_INTENT,joke);
-        i.putExtras(b);
-        mContext.startActivity(i);
-    }
+
 
 }

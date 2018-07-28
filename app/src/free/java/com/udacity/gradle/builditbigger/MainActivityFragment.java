@@ -29,6 +29,7 @@ import com.udacity.gradle.builditbigger.backend.myApi.MyApi;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.concurrent.ExecutionException;
 
 
 /**
@@ -37,8 +38,6 @@ import java.util.Random;
 public class MainActivityFragment extends Fragment {
 
     Button jokeButton;
-    myClass myClass;
-    String[] Jokes;
 
 
     public MainActivityFragment() {
@@ -49,15 +48,21 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
-        myClass = new myClass();
-
         AdView mAdView = (AdView) root.findViewById(R.id.adView);
         jokeButton = root.findViewById(R.id.jokeButton);
         jokeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ProgressBar progressBar = (ProgressBar) getActivity().findViewById(R.id.progress);
-                new EndPointsAsync(getActivity(),progressBar).execute();
+                String joke = null;
+                try {
+                    joke = new EndPointsAsync(getActivity(),progressBar).execute().get();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
+                startJokeActivity(joke);
             }
         });
         // Create an ad request. Check logcat output for the hashed device ID to
@@ -68,6 +73,14 @@ public class MainActivityFragment extends Fragment {
                 .build();
         mAdView.loadAd(adRequest);
         return root;
+    }
+
+    private void startJokeActivity(String joke) {
+        Intent i = new Intent(getActivity(), DisplayJoke.class);
+        Bundle b = new Bundle();
+        b.putString(Constants.JOKE_INTENT,joke);
+        i.putExtras(b);
+        getActivity().getApplication().startActivity(i);
     }
 
 }
