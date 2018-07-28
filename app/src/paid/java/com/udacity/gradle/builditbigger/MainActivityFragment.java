@@ -14,6 +14,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
+import com.sealstudios.myjokelibrary.DisplayJoke;
+import com.udacity.gradle.builditbigger.Utils.Constants;
+
+import java.util.concurrent.ExecutionException;
+
 /**
  * A placeholder fragment containing a simple view.
  */
@@ -34,7 +39,14 @@ public class MainActivityFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ProgressBar progressBar = (ProgressBar) getActivity().findViewById(R.id.progress);
-                String joke = new EndPointsAsync(getActivity().getApplicationContext(),progressBar).execute().get();
+                String joke = null;
+                try {
+                    joke = new EndPointsAsync(getActivity().getApplicationContext(),progressBar).execute().get();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                }
                 startJokeActivity(joke);
             }
         });

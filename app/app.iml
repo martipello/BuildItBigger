@@ -8,104 +8,104 @@
     </facet>
     <facet type="android" name="Android">
       <configuration>
-        <option name="SELECTED_BUILD_VARIANT" value="freeMinApi16Debug" />
-        <option name="ASSEMBLE_TASK_NAME" value="assembleFreeMinApi16Debug" />
-        <option name="COMPILE_JAVA_TASK_NAME" value="compileFreeMinApi16DebugSources" />
+        <option name="SELECTED_BUILD_VARIANT" value="paidMinApi16Debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assemblePaidMinApi16Debug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compilePaidMinApi16DebugSources" />
         <afterSyncTasks>
-          <task>generateFreeMinApi16DebugSources</task>
+          <task>generatePaidMinApi16DebugSources</task>
         </afterSyncTasks>
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/free/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/paid/res" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
-    <output url="file://$MODULE_DIR$/build/intermediates/classes/freeMinApi16/debug" />
-    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/freeMinApi16/debug" />
+    <output url="file://$MODULE_DIR$/build/intermediates/classes/paidMinApi16/debug" />
+    <output-test url="file://$MODULE_DIR$/build/intermediates/classes/test/paidMinApi16/debug" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/build/generated/source/endpoints" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/freeMinApi16/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/freeMinApi16/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/freeMinApi16/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/freeMinApi16/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/freeMinApi16/debug" isTestSource="false" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/freeMinApi16/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/freeMinApi16/debug" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16Debug/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/freeMinApi16/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/freeMinApi16/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/freeMinApi16/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16Debug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFreeMinApi16/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/freeMinApi16/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16Debug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFreeMinApi16/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/res" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/assets" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/aidl" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/rs" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/free/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTestFree/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testFree/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/paidMinApi16/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/paidMinApi16/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/paidMinApi16/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/paidMinApi16/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/paidMinApi16/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/paidMinApi16/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/paidMinApi16/debug" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16Debug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paidMinApi16/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/androidTest/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/paidMinApi16/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/paidMinApi16/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16Debug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaidMinApi16/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/apt/test/paidMinApi16/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16Debug/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaidMinApi16/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/res" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/assets" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/aidl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/rs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/paid/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testPaid/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTestPaid/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/minApi16/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/minApi16/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/minApi16/assets" type="java-resource" />
@@ -246,5 +246,7 @@
     <orderEntry type="module" module-name="javalib" />
     <orderEntry type="module" module-name="myjokelibrary" />
     <orderEntry type="library" name="Gradle: android-android-27" level="project" />
+    <orderEntry type="module" module-name="javalib" />
+    <orderEntry type="module" module-name="myjokelibrary" />
   </component>
 </module>
